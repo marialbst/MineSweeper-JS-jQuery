@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>MineSweeper</title>
+		<link rel="shortcut icon" type="image/x-icon" href="images/mine2.ico"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style/style.css">
+	</head>
+	<h2 class="text-center text-scondary">Enter game details:</h2>
+	<body class="container">
+		<div class="row justify-content-md-center">
+			<form class="col-md-6 text-center">
+				<div class="form-group row">
+					<label for="rows" class="col-sm-4 col-form-label">Rows height:</label>
+					<input type="number" id="rows" class="form-control col-sm-6" min="8" max="30" step="1" value="8"/></div>
+				<div class="form-group row">
+					<label for="cols" class="col-sm-4 col-form-label">Cols width:</label>
+					<input type="number" id="cols" class="form-control col-sm-6" min="8" max="20" step="1" value="8"/>
+				</div>
+				<div class="form-group row">
+					<label for="mines" class="col-sm-4 col-form-label">Mines count:</label>
+					<input type="number" id="mines" class="form-control col-sm-6" min="5" max="200" step="1" value="10"/>
+				</div>
+				<input type="button" id="button" class="btn btn-outline-secondary" value="Start new game"/>
+			</form>
+		</div>
+		<br />
+		<div class="row justify-content-md-center">	
+			<div id="container col-md-auto">
+				<div class="row">
+					<div class="col text-info" >
+						<span id="timer"></span>
+						<span id="time-badge" class="badge badge-pill badge-info"></span>
+					</div>
+					<div class="col text-right text-danger">
+						<span id="flag-badge" class="badge badge-pill badge-danger"></span>
+						<span id="flags"></span>
+					</div>
+				</div>
+				<div id="result"></div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="js/functions.js"></script>
+	</body>
+</html>

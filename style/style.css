@@ -1,0 +1,42 @@
+.mine{
+    border: 2px outset #eeeeee;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: bold;
+    color:#00008B;
+    background-color: #dedede;
+}
+
+.mine:hover{
+    background-color: #cccccc;
+}
+
+.picture{
+    background-size: contain;
+    background-image: url("../images/Bomb.png");
+}
+
+.flag{
+    background-size: contain;
+    background-image: url("../images/dnt.png");
+}
+
+.match{
+    background-size: contain;
+    background-image: url("../images/match.png");
+    background-repeat: no-repeat;
+}
+
+.kaboom{
+    background-size: contain;
+    background-image: url("../images/kaboom.png");
+}
+
+.clicked{
+    background-color: #ddffaa;
+    pointer-events: none;
+}
